@@ -1,0 +1,31 @@
+snippet #!
+#!/bin/bash
+
+$0
+endsnippet
+
+snippet fu "function"
+function ${1:name} {
+	$0
+}
+endsnippet
+
+snippet switch "case .. esac (case)"
+case ${1:word} in
+	${2:pattern} )
+		$0
+	;;
+esac
+endsnippet
+
+snippet case
+${1:pattern} )
+	$0
+;;
+endsnippet
+
+snippet if "if ... then (if)"
+if ${2:[[ ${1:condition} ]]}; then
+	${0:#statements}
+fi
+endsnippet

@@ -1,0 +1,227 @@
+snippet h1
+# $1
+
+$0
+endsnippet
+
+snippet h2
+## $1
+
+$0
+endsnippet
+
+
+snippet h3
+### $1
+
+$0
+endsnippet
+
+snippet h4
+#### $1
+
+$0
+endsnippet
+
+snippet h5
+###### $1
+
+$0
+endsnippet
+
+snippet h6
+###### $1
+
+$0
+endsnippet
+
+snippet tl
+* [ ] $0
+endsnippet
+
+snippet b "bold" i
+**$1** $0
+endsnippet
+
+snippet i "italic" i
+*$1* $0
+endsnippet
+
+snippet pre
+\`\`\`${1:plaintext}
+$2
+\`\`\`
+$0
+endsnippet
+
+snippet prev
+\`\`\`vim
+$0
+\`\`\`
+endsnippet
+
+snippet a
+[${1:text}](${2:url})$0
+endsnippet
+
+snippet img
+![](${1:url} "")$0
+endsnippet
+
+snippet tag
+<${1}>$2</$1>$0
+endsnippet
+
+snippet #
+<a id="#${1}"></a>$0
+endsnippet
+
+snippet tochtml
+<div class="toc">
+	<h2>Contents</h2>
+	$0
+</div>
+endsnippet
+
+snippet ul 
+<ul>
+	<li>${1}</li>
+	$0
+</ul>
+endsnippet
+
+snippet ol 
+<ol>
+	<li>${1}</li>
+	$0
+</ol>
+endsnippet
+
+snippet li
+<li>${1}</li>$0
+endsnippet
+
+snippet nt
+<span class="tags">Tags: ${1}</span>$0
+endsnippet
+
+snippet toc
+<span class="toc"></span>$0
+endsnippet
+
+snippet table
+| ${1}        | ${2}           |
+| ------------- | ------------- |
+| ${3}      | ${4}		|
+$0
+endsnippet
+
+snippet table3
+| ${1}        | ${2}           | ${3}           |
+| ------------- | ------------- | ------------- |
+| ${4}      | ${5}		| ${6}		|
+$0
+endsnippet
+
+snippet td
+| ${1}      | ${2}		|
+$0
+endsnippet
+
+snippet td3
+| ${1}      | ${2}		| ${3}		|
+endsnippet
+
+snippet im
+<span class="math">${1}</span>$0
+endsnippet
+
+snippet bm
+<div class="math">${1}</div>$0
+endsnippet
+
+snippet nd
+<span class="date">Date: `date +"%Y-%m-%d %H:%M:%S"`</span>$0
+endsnippet
+
+snippet br
+<br>
+endsnippet
+
+snippet nh
+# ${1:Headline}
+
+<span class="tags">Tags: $2</span>
+<span class="date">Date: `date +"%Y-%m-%d %H:%M:%S"`</span>
+
+$0
+endsnippet
+
+snippet nh2
+## ${1:Headline}
+
+<span class="tags">Tags: $2</span>
+<span class="date">Date: `date +"%Y-%m-%d %H:%M:%S"`</span>
+
+$0
+endsnippet
+
+snippet figc
+<figure>
+  <img src="$1" alt="">
+  <figcaption>$2</figcaption>
+</figure>$0
+endsnippet
+
+snippet figcl
+<figure class="left">
+  <img src="$1" alt="">
+  <figcaption>$2</figcaption>
+</figure>$0
+endsnippet
+
+snippet figcr
+<figure class="right">
+  <img src="$1" alt="">
+  <figcaption>$2</figcaption>
+</figure>$0
+endsnippet
+
+snippet fign
+<figure>
+  <img src="$1" alt="">
+</figure>$0
+endsnippet
+
+snippet figl
+<figure class="left">
+  <img src="$1" alt="">
+</figure>$0
+endsnippet
+
+snippet figr
+<figure class="right">
+  <img src="$1" alt="">
+</figure>$0
+endsnippet
+
+snippet <>
+\`<$1>\` $0
+endsnippet
+
+# TODO create auto-pair configuration for it
+snippet “ "" A
+“$1” $0
+endsnippet
+
+snippet "(?<=[^\s])“" "" rA
+“$1”$0
+endsnippet
+
+snippet „ "" A
+„$1“ $0
+endsnippet
+
+snippet "(?<=[^\s])„" "" rA
+„$1“$0
+endsnippet
