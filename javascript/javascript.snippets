@@ -1,0 +1,55 @@
+# A valid snippet should starts with:
+#
+#		snippet trigger_word [ "description" [ options ] ]
+#
+# and end with:
+#
+#		endsnippet
+#
+# Snippet options:
+#
+#		b - Beginning of line.
+#		i - In-word expansion.
+#		w - Word boundary.
+#		r - Regular expression
+#		e - Custom context snippet
+#		A - Snippet will be triggered automatically, when condition matches.
+#
+# Basic example:
+#
+#		snippet emitter "emitter properties" b
+#		private readonly ${1} = new Emitter<$2>()
+#		public readonly ${1/^_(.*)/$1/}: Event<$2> = this.$1.event
+#		endsnippet
+#
+# Online reference: https://github.com/SirVer/ultisnips/blob/master/doc/UltiSnips.txt
+
+snippet clo "console.log() without semicolon" wA
+console.log(${1})${0}
+endsnippet
+
+snippet ce "console.error() without semicolon" i
+console.error(${1})${0}
+endsnippet
+
+snippet cl
+console.log($1);$0
+endsnippet
+
+snippet db
+debugger;
+endsnippet
+
+snippet fucl "functional style class"
+const ${1} = function(${2}) {
+	
+	const that = {}
+
+	${0}
+	
+	return that
+}
+
+exports.$1 = $1
+endsnippet
+
